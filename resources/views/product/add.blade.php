@@ -74,25 +74,23 @@
                                             <span class="text-danger">{{ $message }}</span>
                                         @endif
                                     </div>
-                                    <div class="form-group col-sm-4">
+                                    {{-- <div class="form-group col-sm-4">
                                         <label>Unite Price <span class="text-danger">*</span> </label>
                                         <input type="number" step="any" placeholder="Enter unit price" class="form-control @error('unit_price') is-invalid @enderror" name="unit_price" id="unit_price" value="{{ old('unit_price') }}">
                                         @error('unit_price')
                                             <span class="text-danger">{{ $message }}</span>
                                         @endif
-                                    </div>
+                                    </div> --}}
 
-                                    <div class="form-group col-sm-4 " id="total_flate">
+                                    {{-- <div class="form-group col-sm-4 " id="total_flate">
                                         <label>Total Flat Price <span class="text-danger">*</span> </label>
                                         <input type="text" step="any" name="flat_price" id="flat_price" placeholder="0" class="form-control @error('flat_price') is-invalid @enderror" >
-                                        {{-- total_flate_price --}}
-                                        {{-- <h2 id="flate_price">0</h2> --}}
                                         @error('flat_price')
                                         <span class="text-danger">{{ $message }}</span>
                                     @endif
-                                    </div>
+                                    </div> --}}
 
-                                    <div class="form-group col-sm-4">
+                                    {{-- <div class="form-group col-sm-4">
                                         <label>Car Parking Charges (Optional)</label>
                                         <input type="number" step="any" placeholder="Car Parking Charges (optional)" class="form-control price" name="parking_charge" value="{{ old('parking_charge') }}" id="car_charge">
                                     </div>
@@ -120,8 +118,8 @@
                                         <label>Net Sells Price </label>
                                         <h2 id="netSellPrice">0</h2>
                                         <input type="hidden" step="any" id="net_total" name="flat_net_price">
-                                    </div>
-                                    <div class="form-group col-sm-12">
+                                    </div> --}}
+                                    <div class="form-group col-sm-8">
                                         <label>File  (Optional) </label>
                                         <input type="file" class="form-control @error('file') is-invalid @enderror" name="file" value="{{ old('file') }}">
                                         @error('file')

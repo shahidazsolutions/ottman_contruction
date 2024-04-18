@@ -45,22 +45,22 @@ class ProductController extends Controller
             'room_number' => 'required',
             'floor_number' => 'required',
             'flate_size' => 'required',
-            'unit_price' => 'required',
-            'flat_price'=>'required|numeric',
-            'flat_net_price'=>'nullable|numeric',
+            // 'unit_price' => 'required',
+            // 'flat_price'=>'required|numeric',
+            // 'flat_net_price'=>'nullable|numeric',
             'file' => 'nullable|image'
         ],
         ["file.dimensions"=>'Image less than 900x900.']);
         $Fields = array(
             'booking' => 0,
-            'parking_charge' => $request->parking_charge,
-            'utility_charge' => $request->utility_charge,
-            'additional_charge' => $request->additional_charge,
-            'other_charge' => $request->other_charge,
-            'discount_deduction' => $request->discount_deduction,
-            'refund_charge' => $request->refund_charge,
-            'description' => $request->description,
-            'flat_price'=>$request->flat_price
+            // 'parking_charge' => $request->parking_charge,
+            // 'utility_charge' => $request->utility_charge,
+            // 'additional_charge' => $request->additional_charge,
+            // 'other_charge' => $request->other_charge,
+            // 'discount_deduction' => $request->discount_deduction,
+            // 'refund_charge' => $request->refund_charge,
+            // 'description' => $request->description,
+            // 'flat_price'=>$request->flat_price
 
         );
         try {

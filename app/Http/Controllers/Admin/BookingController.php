@@ -32,11 +32,11 @@ class BookingController extends Controller
         // ->get();
 
       $customers = Customer::join('form_applications', 'customers.id', '=', 'form_applications.customer_id')
-    ->with('applications')
-    ->select('customers.name', 'customers.id')
-    ->groupBy('customers.id','customers.name')
-    ->orderBy('customers.name') // Change ordering to customer name
-    ->get();
+        ->with('applications')
+        ->select('customers.name', 'customers.id')
+        ->groupBy('customers.id','customers.name')
+        ->orderBy('customers.name') // Change ordering to customer name
+        ->get();
 
             // return $allCustomers;
         return view('forms.all-application-form', compact('customers'));
